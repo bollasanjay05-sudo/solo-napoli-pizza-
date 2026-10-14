@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#ff4b20">
+  <meta name="description" content="Solo Napoli — pizza with a personality. Browse our menu, customise your pizza, and order for pickup or delivery.">
+  <title>Solo Napoli — A slice of happiness</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+    <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 8h14l1 12H4L5 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></symbol>
+    <symbol id="i-truck" viewBox="0 0 24 24"><path d="M3 6h11v12H3zM14 10h4l3 4v4h-7z"/><circle cx="7" cy="19" r="2"/><circle cx="18" cy="19" r="2"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M5 5l14 14M19 5 5 19"/></symbol>
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v11H3z"/><path d="M9 21v-7h6v7"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l4 2"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h16m-7-7 7 7-7 7"/></symbol>
+  </svg>
+
+  <div class="intro" id="intro" role="presentation" aria-label="Solo Napoli animated introduction">
+    <button class="skip" id="skipIntro" type="button">Skip intro ↗</button>
+    <div class="intro-scene" aria-hidden="true">
+      <div class="intro-road"></div><div class="intro-pole"></div>
+      <img class="intro-wheel" src="assets/margherita.webp" alt="">
+      <div class="impact"></div>
+      <svg class="survivor" viewBox="0 0 160 205" xmlns="http://www.w3.org/2000/svg"><path d="M24 12Q83-7 145 13L84 178Q74 197 66 179Z" fill="#f5b44a" stroke="#d9782b" stroke-width="8" stroke-linejoin="round"/><path d="M29 25Q85 3 137 27L85 158Z" fill="#f04c25"/><path d="M45 35Q85 21 124 39L86 138Z" fill="#ffd76c"/><circle cx="72" cy="65" r="14" fill="#c52921"/><circle cx="103" cy="92" r="12" fill="#c52921"/><circle cx="81" cy="118" r="11" fill="#c52921"/><path d="M52 58l32 6-1 15-24-1zM84 63l34-3-8 17-26 2Z" fill="#1f1b30"/><path d="M84 64v7" stroke="#1f1b30" stroke-width="5"/><path d="M85 84q12 10 24-2" fill="none" stroke="#532e22" stroke-width="4" stroke-linecap="round"/><path d="M36 121Q-2 93 4 125M109 136q40-22 42-2M71 176 46 200M89 176l28 24" stroke="#39282a" stroke-width="6" stroke-linecap="round" fill="none"/></svg>
+    </div>
+    <div class="intro-name"><strong>Solo</strong><span>NAPOLI</span><small>EST. 2026 &nbsp; 🇮🇹</small></div>
+    <div class="intro-footer">A little Napoli. A lot of personality.</div>
+  </div>
+
+  <div class="site" id="top">
+    <div class="announcement">✦ &nbsp; MADE FOR PIZZA LOVERS &nbsp; ✦ &nbsp; PICKUP OR DELIVERY</div>
+    <header class="header">
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#top" class="brand" aria-label="Solo Napoli home"><img src="assets/mascot.png" alt="Solo Napoli mascot"><span class="brand-words"><strong>Solo</strong><small>NAPOLI</small></span></a>
+        <div class="nav-links"><a class="current" href="#top">Home</a><a href="#menu">Our menu</a><a href="#about">Our story</a><a href="#contact">Contact</a></div>
+        <label class="search-box"><svg class="icon"><use href="#i-search"/></svg><input id="desktopSearch" aria-label="Search the menu" type="search" placeholder="Search pizza..."></label>
+        <button class="cart-trigger" id="openCart" type="button" aria-label="Open cart"><svg class="icon"><use href="#i-bag"/></svg><span>My bag</span><span class="cart-count" data-cart-count>0</span></button>
+      </nav>
+    </header>
+    <main>
+      <section class="hero" aria-labelledby="heroTitle">
+        <div class="hero-copy"><span class="eyebrow">Neapolitan-inspired, made with love</span><h1 id="heroTitle">Everything is better with <span class="orange">PIZZA.</span></h1><p class="hero-desc">Big flavours. Happy slices. Good times. Get your Solo Napoli favourites ready for pickup or delivered straight to your door.</p><div class="hero-actions"><a href="#menu" class="btn btn-primary">ORDER YOUR PIZZA <svg class="icon"><use href="#i-arrow"/></svg></a><a href="#about" class="btn btn-link">Meet Solo Napoli <span class="round-arrow">›</span></a></div></div>
+        <div class="hero-side" aria-hidden="true"><div class="hero-blob"></div><span class="sprinkle one">✳</span><span class="sprinkle two">✧</span><img class="hero-pizza" src="assets/margherita.webp" alt=""><div class="float-card hero-badge"><img id="heroBadgeImg" src="assets/pepperoni.webp" alt=""><div><strong id="heroBadgeName">Pepperoni Pop</strong><span id="heroBadgePrice">From €11.90 ✦</span></div></div><div class="hero-selector" id="heroSelector" role="group" aria-label="Featured pizza chooser"></div><div class="float-label"><span class="bubble">🍕</span><div><b>Made to make you smile</b><br><small>Fresh pizza, fun attitude.</small></div></div></div>
+      </section>
+      <div class="order-choice"><div class="choice-intro"><span class="circle"><svg class="icon"><use href="#i-bag"/></svg></span><div><strong>How would you like your pizza?</strong><small>Choose your way to enjoy Solo Napoli</small></div></div><div class="switch" role="group" aria-label="Order type"><button type="button" data-mode="pickup" class="active"><svg class="icon"><use href="#i-bag"/></svg> Self pickup</button><button type="button" data-mode="delivery"><svg class="icon"><use href="#i-truck"/></svg> Home delivery</button></div></div>
+      <label class="mobile-search"><svg class="icon"><use href="#i-search"/></svg><input type="search" id="mobileSearch" placeholder="What are you craving?" aria-label="Search pizza"></label>
+      <section class="content" id="menu" aria-labelledby="menuTitle"><div class="section-top reveal"><div><span class="eyebrow">The good stuff</span><h2 id="menuTitle">Pick your <span style="color:var(--orange)">favourite.</span></h2></div><p>Classic favourites, spicy surprises, and a little something extra. Your pizza, your rules.</p></div><div id="filters" class="filters" aria-label="Menu category filters"></div><div id="menuGrid" class="menu-grid" aria-live="polite"></div><div id="emptyResults" class="empty-results" hidden>No matches yet. Try another pizza or category. 🍕</div></section>
+      <div class="features"><div class="feature reveal"><div class="feature-icon"><svg class="icon"><use href="#i-bag"/></svg></div><div><strong>Pickup, your way</strong><p>Order ahead and collect at the shop once confirmed.</p></div></div><div class="feature reveal"><div class="feature-icon"><svg class="icon"><use href="#i-truck"/></svg></div><div><strong>Delivery to your door</strong><p>Choose delivery and tell us where to bring the good stuff.</p></div></div><div class="feature reveal"><div class="feature-icon"><svg class="icon"><use href="#i-heart"/></svg></div><div><strong>Made with personality</strong><p>Colourful slices, playful flavours, and plenty of love.</p></div></div></div>
+      <section class="promo reveal"><div style="position:relative;z-index:1"><span class="eyebrow" style="color:#ffebd8">🍕 &nbsp; GOT A CRAVING?</span><h2>One more slice?<br>We won't judge.</h2><p>Find your new favourite on the menu and order it exactly how you like it.</p><a class="btn" href="#menu">Explore our menu <svg class="icon"><use href="#i-arrow"/></svg></a></div><img src="assets/diavola.webp" alt="Spicy Solo Napoli pizza" loading="lazy"></section>
+      <section class="story" id="about"><div class="story-visual reveal"><img src="assets/solo-napoli-logo.png" alt="Official Solo Napoli mascot and logo" loading="lazy"><span class="tiny">One slice. Big character. 😎</span></div><div class="story-copy reveal"><span class="eyebrow">Ciao, we're Solo Napoli</span><h2>Not just pizza.<br><span style="color:var(--orange)">A whole mood.</span></h2><p>Meet the slice with the sunglasses. At Solo Napoli, pizza isn't meant to be boring. We're bringing Italian-inspired flavour, playful energy and the kind of food that makes any day better.</p><p>Explore the menu, make your picks, then choose to collect them yourself or request home delivery. Simple, fast and delicious.</p><div class="story-pills"><span>🍕 Pizza first</span><span>🧡 Made with love</span><span>🇮🇹 Napoli spirit</span></div><button id="replayIntro" class="btn btn-link" type="button" style="padding-left:0;margin-top:16px">Replay our mascot animation <span class="round-arrow">↻</span></button></div></section>
+    </main>
+    <footer class="footer" id="contact"><div class="footer-grid"><div><a href="#top" class="brand" style="width:max-content"><img src="assets/mascot.png" alt=""><span class="brand-words"><strong>Solo</strong><small>NAPOLI</small></span></a><p>A little Napoli in every bite.<br>Good pizza, good mood, good company.</p></div><div><h3>Explore</h3><a href="#top">Home</a><a href="#menu">Order menu</a><a href="#about">Our story</a><a href="#contact">Contact</a></div><div><h3>Visit &amp; order</h3><p id="shopAddress">Pickup location: update in setup</p><p id="shopHours">Hours: update in setup</p><p id="shopContact">WhatsApp: add your shop number</p></div></div><div class="footer-bottom"><span>© <span id="year">2026</span> Solo Napoli. All rights reserved.</span><span>🍅 🍃 Made for the love of pizza.</span></div></footer>
+  </div>
+
+  <nav class="mobile-dock" aria-label="Mobile quick navigation"><a href="#top" class="selected"><svg class="icon"><use href="#i-home"/></svg>Home</a><a href="#menu"><svg class="icon"><use href="#i-menu"/></svg>Menu</a><button type="button" id="mobileOrder"><svg class="icon"><use href="#i-bag"/></svg>My bag <span class="sr-only" data-cart-count>0</span></button><a href="#contact"><svg class="icon"><use href="#i-pin"/></svg>Visit</a></nav>
+  <div class="shade" id="shade" aria-hidden="true"></div>
+  <aside class="drawer" id="cartDrawer" role="dialog" aria-modal="true" aria-label="Shopping bag" aria-hidden="true"><div class="drawer-head"><h2>My pizza bag <span>🍕</span></h2><button type="button" class="close" data-close aria-label="Close bag"><svg class="icon"><use href="#i-close"/></svg></button></div><div class="drawer-scroll"><div class="drawer-choice"><button type="button" data-mode="pickup" class="active"><svg class="icon"><use href="#i-bag"/></svg> Self pickup</button><button type="button" data-mode="delivery"><svg class="icon"><use href="#i-truck"/></svg> Delivery</button></div><div id="cartItems"></div><div id="checkoutDetails" hidden><h3 class="form-heading">Your details</h3><form id="orderForm" class="order-form" autocomplete="on"><div class="field"><label for="customerName">Name *</label><input id="customerName" name="name" autocomplete="name" required placeholder="Your name"></div><div class="field"><label for="customerPhone">Phone number *</label><input id="customerPhone" name="phone" autocomplete="tel" type="tel" required placeholder="+371 ..."></div><div id="deliveryFields" hidden><div class="field"><label for="deliveryAddress">Delivery address *</label><textarea id="deliveryAddress" name="address" placeholder="Street, number, apartment, city, postcode"></textarea><p class="hint" id="deliveryZoneHint">Delivery eligibility is confirmed by the shop.</p></div></div><div class="field"><label for="orderTime">When would you like it?</label><select id="orderTime" style="width:100%;border:1px solid #e8e3df;border-radius:13px;padding:12px 13px;background:#fff;color:var(--ink)"><option value="As soon as available">As soon as available</option><option value="Scheduled">Choose a time</option></select></div><div class="field" id="scheduledField" hidden><label for="scheduledAt">Requested date &amp; time *</label><input id="scheduledAt" type="datetime-local"></div><div class="field"><label for="orderNote">Special instructions (optional)</label><textarea id="orderNote" placeholder="Anything we should know?"></textarea></div></form><div class="totals"><div class="total-line"><span>Subtotal</span><span id="subtotal">€0.00</span></div><div class="total-line"><span>Delivery</span><span id="deliveryFee">Free</span></div><div class="total-line final"><span>Total</span><strong id="total">€0.00</strong></div><p id="deliveryInfo" style="font-size:10px;color:var(--muted);line-height:1.6"></p></div></div></div><div class="drawer-foot" id="cartFooter"><button type="button" class="btn btn-primary" id="checkoutBtn" disabled>Your bag is empty</button><button type="button" id="copyOrder" class="copy-btn" hidden>Copy order details instead</button><p class="hint" id="checkoutHint">Add something tasty to get started.</p></div></aside>
+  <section class="modal" id="productModal" role="dialog" aria-modal="true" aria-label="Customise your item" aria-hidden="true"><div id="modalContent"></div></section>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js" defer></script>
+</body>
+</html>
